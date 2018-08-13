@@ -9,6 +9,17 @@
 * Post 1.8.x - work to improve/cleanup/pay technical debt. When this work is completed there will be a 1.9.x tagged release
 * Post 1.9.x googletest will follow [Abseil Live at Head philosophy](https://abseil.io/about/philosophy)
 
+**Changes from the78mole**
+
+Added Eclipse Project files and made it compile with MinGW + MSYS. You need to install the 
+autotools packages within MinGW and import the project into Eclipse CDT. If you have the right 
+plugins installed within Eclipse (e.g. autotools support), it will compile cleanly. The generated 
+libraries will be available after the "all" target has been build:
+  * googletest/lib/.lib/libgtest.a
+  * googletest/lib/.lib/libgtest_main.a
+  * googlemock/lib/.lib/libgmock.a
+  * googlemock/lib/.lib/libgmock_main.a
+
 
 Welcome to **Google Test**, Google's C++ test framework!
 
@@ -110,6 +121,7 @@ package (as described below):
 ### Windows Requirements ###
 
   * Microsoft Visual C++ 2015 or newer
+  * Eclipse CDT + MinGW + MSYS (added by the78mole)
 
 ### Cygwin Requirements ###
 

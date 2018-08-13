@@ -41,3 +41,17 @@ googletest/fused-src/
 
 # macOS files
 .DS_Store
+*.Plo
+Makefile
+*.log
+config.status
+.dirstamp
+*.a
+*.la
+libtool
+.libs/
+.deps/
+*.Po
+*.lo
+*.o
+*-config
